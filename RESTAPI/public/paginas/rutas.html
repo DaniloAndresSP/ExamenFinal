@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal de Transporte</title>
+    <link  rel="stylesheet" href="../css/rutas.css"/>
+</head>
+<body>
+
+  <ul id="menu">
+    <li><a href="">Inicio</a></li>
+    <li><a href="/paginas/empresas.html">Empresas</a></li>
+    <li><a href="/paginas/vehiculos.html">Vehiculos</a></li>
+    <li><a href="/paginas/rutas.html">Rutas</a></li>
+    <li><a href="/paginas/reservas.html">Reservas</a></li>
+    </ul>
+
+    <div id="app">
+        <h2 id="titulo">Añadir Rutas</h2>
+        <form action="/rutas/agregar" id="formulario" method="POST">
+          <input type="text" placeholder="Origen" name="origen" id="origen"  required/>
+          <br>
+          <input type="text" placeholder="Destino" name="destino" id="destino" required />
+          <br>
+          <input type="datetime-local" placeholder="Hora y fecha de salida" name="fechaHoraSalida" id="nombre" required />
+          <br>
+          <input type="text" placeholder="Empresa Transportadora" name="nombreEmpresa" id="nombreE"  required/>
+          <br>
+          <br>
+          <button type="submit" id="boton">Enviar</button>
+        </form>
+
+        <div id="listaEmpresas">
+          
+          <ul>
+            <!--
+            <li>Nombre contacto <span class="botones"><span class="btn btn_editar">Editar</span><span class="btn btn_borrar">Borrar</span></span>
+            </li>
+            <li>Nombre contacto <span class="botones"><span class="btn btn_editar">Editar</span><span class="btn btn_borrar">Borrar</span></span>
+            </li>
+            <li>Nombre contacto <span class="botones"><span class="btn btn_editar">Editar</span><span class="btn btn_borrar">Borrar</span></span>
+            </li>
+            <li>Nombre contacto <span class="botones"><span class="btn btn_editar">Editar</span><span class="btn btn_borrar">Borrar</span></span>
+            </li>
+            <li>Nombre contacto <span class="botones"><span class="btn btn_editar">Editar</span><span class="btn btn_borrar">Borrar</span></span>
+            </li>
+            <li>Nombre contacto <span class="botones"><span class="btn btn_editar">Editar</span><span class="btn btn_borrar">Borrar</span></span>
+            </li>
+            -->
+            
+          </ul>
+        </div>
+      </div>
+      
+</body>
+</html>
